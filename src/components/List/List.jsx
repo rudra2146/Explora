@@ -1,10 +1,18 @@
 import React from 'react'
-import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select  } from '@material-ui/core'
+import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select  } from 
+'@material-ui/core'
+import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from './styles'
 const List = ({ type, setType, rating, setRating }) => {
   const classes = useStyles();
   
   const places = [
+    { name: "Cool Place "},
+    { name: "Best Beer "},
+    { name: "Cool Steak "},
+    { name: "Cool Place "},
+    { name: "Best Beer "},
+    { name: "Cool Steak "},
     { name: "Cool Place "},
     { name: "Best Beer "},
     { name: "Cool Steak "},
@@ -34,7 +42,7 @@ const List = ({ type, setType, rating, setRating }) => {
         <Grid container spacing={3} className='classes.list'>
           {places?.map((place,i)=>(
             <Grid item key={i} xs={12}>
-                
+                <PlaceDetails place={place}/>
             </Grid>
           ))}
         </Grid>
