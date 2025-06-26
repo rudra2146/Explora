@@ -3,20 +3,10 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, 
 '@material-ui/core'
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from './styles'
-const List = ({ type, setType, rating, setRating }) => {
+
+const List = ({ type, setType, rating, setRating,places }) => {
   const classes = useStyles();
   
-  const places = [
-    { name: "Cool Place "},
-    { name: "Best Beer "},
-    { name: "Cool Steak "},
-    { name: "Cool Place "},
-    { name: "Best Beer "},
-    { name: "Cool Steak "},
-    { name: "Cool Place "},
-    { name: "Best Beer "},
-    { name: "Cool Steak "},
-  ]
   return (
     <div className={classes.container}>
         <Typography variant='h4'>
