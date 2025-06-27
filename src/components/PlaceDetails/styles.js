@@ -10,4 +10,12 @@ export default makeStyles(() => ({
   spacing: {
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
   },
+  price: {
+      width: '50%',
+      float: 'left',
+  },
+
+  price_right: {
+      textAlign: 'right',
+  },
 }));
