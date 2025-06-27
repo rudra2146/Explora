@@ -6,7 +6,7 @@ import useStyles from './styles'
 
 const List = ({ type, setType, rating, setRating,places }) => {
   const classes = useStyles();
-  
+
   return (
     <div className={classes.container}>
         <Typography variant='h4'>

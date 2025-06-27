@@ -11,11 +11,14 @@ export default makeStyles(() => ({
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
   },
   price: {
-      width: '50%',
-      float: 'left',
+       width: '35%',
+       float: 'left',
+       textAlign: 'left',
   },
 
   price_right: {
+       width: '65%',
       textAlign: 'right',
+      fontSize: "17px"
   },
 }));
